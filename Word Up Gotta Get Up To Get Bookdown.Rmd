@@ -1,0 +1,402 @@
+---
+title: "Word Up - Gotta Get Up To Get Bookdown"
+output: 
+  html_document: 
+    highlight: textmate
+    toc: yes
+    toc_float: 
+      collapsed: no
+    theme: cosmo
+---
+
+## Introduction
+
+R is a powerful programming language for statistical computing with many packages and tools.
+
+The goal of this article is to arm you with tools and techniques for using bookdown and generating word output. 
+
+## Reproducibility
+
+https://www.nih.gov/research-training/rigor-reproducibility/principles-guidelines-reporting-preclinical-research
+
+http://journals.plos.org/plosbiology/article?id=10.1371%2Fjournal.pbio.1002165
+
+https://ropensci.org/blog/2014/06/09/reproducibility/
+
+https://www.r-statistics.com/2016/07/the-reproducibility-crisis-in-science-and-prospects-for-r/
+
+http://biorxiv.org/content/early/2016/07/29/066803
+
+https://github.com/statwonk/openfda-dashboard
+
+https://github.com/crtahlin/medplot
+
+https://beta.rstudioconnect.com/content/2715/Up-to-Bat-with-Packrat.html
+
+# Workflow
+
+https://kieranhealy.org/resources/
+
+http://kbroman.org/steps2rr/
+
+https://stackoverflow.com/questions/40563479/relationship-between-r-markdown-knitr-pandoc-and-bookdown
+
+https://jabranham.com/blog/2016/11/using-pandoc-export-to-word/
+
+https://sites.temple.edu/psmgis/2017/07/30/using-r-markdown-to-create-reports/
+
+http://kbroman.org/datacarpentry_R_2017-01-10/04-rmarkdown.html
+
+http://www.petersmith.org/blog/2016/11/11/academic-workflow/
+
+## Literate programming
+
+https://en.wikipedia.org/wiki/Literate_programming
+
+https://daijiang.name/en/2017/04/05/writing-academic-papers-with-rmarkdown/
+
+https://remi-daigle.github.io/2017-CHONe-Data/Rmarkdown.nb.html
+
+Literature programming: LaTex allows us to mix code with text in the same file, which increases the reproducibility and decreases potential errors.
+
+https://github.com/tjmahr/dissertation
+
+https://remi-daigle.github.io/2017-CHONe-Data/Rmarkdown.nb.html
+
+## R Markdown
+
+http://rmarkdown.rstudio.com/
+
+https://angus.readthedocs.io/en/2017/rmarkdown_rnaseq.html
+
+## Evolution of R Markdown
+
+http://rmarkdown.rstudio.com/rmarkdown_websites.html
+
+https://bookdown.org/yihui/blogdown/
+
+https://bookdown.org/
+
+## What is Bookdown?
+
+R Package for authoring Books and Technical Documents with R Markdown.
+
+https://github.com/rstudio/bookdown
+
+Bookdown came out in Jul 13, 2016 
+
+https://github.com/rstudio/bookdown/releases
+
+With the offical announcment on 2016-12-02
+
+https://blog.rstudio.com/2016/12/02/announcing-bookdown/
+
+I see bookdown as part of the evolution of R Marlkdown...Part of a new bread of RMD tools like R Markdown webistes, blogdown etc.
+
+## Bookdown Getting Started
+
+https://bookdown.org/yihui/bookdown/get-started.html
+
+https://bookdown.org/yihui/bookdown-demo/
+
+https://github.com/rstudio/bookdown-demo
+
+https://github.com/yihui/bookdown-minimal
+
+By default, bookdown merges all Rmd files by the order of filenames, e.g., 01-intro.Rmd will appear before 02-literature.Rmd. Filenames that start with an underscore _ are skipped. 
+
+https://bookdown.org/yihui/bookdown/usage.html
+
+At the moment, the major output formats that you may use include bookdown::pdf_book, bookdown::gitbook, bookdown::html_book, and bookdown::epub_book.
+
+https://bookdown.org/yihui/bookdown/output-formats.html
+
+The bookdown package primarily supports three types of output formats: HTML, LaTeX/PDF, and e-books.
+
+What about word?
+
+https://twitter.com/xieyihui/status/736928051427053568
+
+https://bookdown.org/yihui/bookdown/configuration.html
+
+There are more (optional) settings you can configure for a book in _bookdown.yml
+
+https://bookdown.org/yihui/bookdown/configuration.html
+
+Output formats can be specified either in the YAML metadata of the first Rmd file of the book, or in a separate YAML file named _output.yml under the root directory of the book.
+
+https://bookdown.org/yihui/bookdown/output-formats.html
+
+If you plan to generate multiple output formats for a book, you are recommended to specify all formats in _output.yml.
+
+## Building the Book
+
+https://bookdown.org/yihui/bookdown/build-the-book.html
+
+I tend to use the Build tab and select Build Book. This will run...
+
+rmarkdown::render_site(encoding = 'UTF-8')
+
+To build all Rmd files into a book, you can call the render_book() function in bookdown. Below are the arguments of render_book():
+
+render_book(input, output_format = NULL, ..., clean = TRUE, 
+  envir = parent.frame(), clean_envir = !interactive(), 
+  output_dir = NULL, new_session = NA, preview = FALSE, 
+  encoding = "UTF-8")
+  
+The most important argument is output_format, which can take a character string of the output format (e.g., 'bookdown::gitbook'). You can leave this argument empty, and the default output format will be the first output format specified in the YAML metadata of the first Rmd file or a separate YAML file _output.yml, as mentioned in Section 4.4. 
+
+If you plan to generate multiple output formats for a book, you are recommended to specify all formats in _output.yml.
+
+## Two rendering approaches
+
+Two approaches “Merge and Knit” (M-K) and “Knit and Merge” (K-M).
+
+The default approach in bookdown is M-K.
+
+If you want each chapter to compile from a clean state, use the K-M approach.
+
+K-M does not allow Rmd files to be in subdirectories, but M-K does.
+
+To switch to K-M, you either use the argument new_session = TRUE when calling render_book(), or set new_session: yes in the configuration file _bookdown.yml.
+
+## Examples
+
+https://github.com/rstudio/bookdown-demo
+
+https://github.com/aj2duncan/Rmd_Ed_Paper
+
+https://github.com/MariaSchaarschmidt/chaukgeomorph/blob/a3add3e87df68e9f2e28a6d7363bf9dd17fc31c6/analysis/paper/paper.Rmd
+
+https://github.com/tjmahr/dissertation
+
+https://github.com/asancpt/edison-report
+
+https://github.com/dpastoor/simplest_bayes
+
+https://github.com/dpastoor/r-pharmsciences
+
+https://github.com/philbowsher/shiny-rmd-pharma-session-2017-08-23/tree/master/6_RMD_Immunogenicity_Bookdown
+
+https://beta.rstudioconnect.com/content/2899/
+
+## Notes about Examples
+
+Parameterised books - don't put the parameters in each RMD like you would with regular RMD. Put them in th index.rmd.
+
+https://github.com/rstudio/bookdown/issues/346
+
+https://github.com/rstudio/bookdown/issues/155
+
+The examples above are in my opinion, 2 ways to render documents. The first is books. The second is regular RMD but run with bookdown to take advantage of the freatures in bookdown.
+
+## Preview a chapter
+
+preview_chapter()
+
+https://bookdown.org/yihui/bookdown/preview-a-chapter.html
+
+serve_book()
+
+We will revisit later...
+
+## R or Shell script or Makefile to compile the book
+
+https://bookdown.org/yihui/bookdown/build-the-book.html
+
+Once all formats are specified in _output.yml, it is easy to write an R or Shell script or Makefile to compile the book. Below is a simple example of using a Shell script to compile a book to HTML (with the GitBook style) and PDF...
+
+https://github.com/dragon-analytics/go-google-yourself/blob/31422fa61ef95a8c3c992e17d0e28e6574932c09/_build.sh
+
+https://github.com/moj-analytical-services/platform_user_guidance/blob/fe7d5e37c5afb84f24c1251d2bfd57a008dfdb0b/makefile
+
+https://github.com/LucyMcGowan/handbook/blob/e5d8d042e23648967e3be1313fea00b9fe1bc09d/compile_book.R
+
+## On to Word Output
+
+Prior to the release, many people were asking for Word out as part of bookdown:
+
+https://github.com/rstudio/bookdown/issues/127
+
+On Jul 10, 2016 it was added...via word_document2()
+
+You could always export r markdown reports to work via output: word_document
+
+https://www.rdocumentation.org/packages/rmarkdown/versions/1.6/topics/word_document
+
+http://rmarkdown.rstudio.com/word_document_format.html
+
+http://rmarkdown.rstudio.com/articles_docx.html
+
+But this didn't exist for bookdown
+
+https://twitter.com/xieyihui/status/736928051427053568
+
+http://lineardata.net/how-do-you-write-beautiful-reports-using-r-markdown/
+
+http://r4ds.had.co.nz/r-markdown-formats.html
+
+## word_document2() huh?
+
+If you create a report with rmarkdown::render() via RMD, there are some features missing such as the automatic numbering of figures/tables/equations, and cross-referencing figures/tables/equations/sections
+
+https://bookdown.org/yihui/bookdown/a-single-document.html
+
+So the family of *2() functions were born to address, basically wrappers of the normal output formats. What I find confusing, can't you have a book as a word doc? Sure - right?
+
+The page above has:
+
+"We have factored out these features from bookdown, so that you can use them without having to prepare a book of multiple Rmd files"
+
+Run bookdown::word_document2 in the console...
+
+## Cross Referencing
+
+The main features missing there are the automatic numbering of figures/tables/equations, and cross-referencing figures/tables/equations/sections.
+
+Users were specficially looking for ross referencing of figure and table.
+
+If you render an R Markdown document with the output format, say, bookdown::html_document2, you will get figure/table numbers and be able to cross-reference them in the single HTML page using the syntax described in Chapter 2.
+
+https://earthdatascience.org/courses/earth-analytics/document-your-science/add-citations-to-rmarkdown-report/
+
+Actually, bookdown _can_ handle captions and cross-references for MS Word output. If your header YAML contains `output: bookdown::word_document2` then you can use captions and cross-references exactly as described in 
+
+https://bookdown.org/yihui/bookdown/cross-references.html
+
+https://eddjberry.netlify.com/post/writing-your-thesis-with-bookdown/
+
+https://github.com/rstudio/bookdown/issues/190
+
+## Single Document Example as Word
+
+https://github.com/aj2duncan/Rmd_Ed_Paper
+
+## Book as Word
+
+http://www.pzhao.org/en/post/bookdown-cheatsheet/
+
+Export Word document
+Insert the following line into _output.yml:
+
+bookdown::word_document2: default 
+
+This works - try it here:
+
+https://github.com/rstudio/bookdown-demo
+
+* Changing output: bookdown::gitbook to word_document2 does no work in index.rmd
+
+## bookdown::word_document2: Arguments
+
+If you run bookdown::word_document2 in the console, you will see:
+
+fig_caption = TRUE, md_extensions = NULL, pandoc_args = NULL
+
+Ok, but what about the other arguments like:
+
+reference_docx
+
+keep_md
+
+fig_width
+
+toc: yes
+
+toc_depth: 4
+
+http://rmarkdown.rstudio.com/word_document_format.html
+
+These seem to work as seen here:
+
+https://github.com/aj2duncan/Rmd_Ed_Paper/blob/master/ADuncan_Rmd_Ed_Paper.Rmd
+
+https://raw.githubusercontent.com/ecoquants/nrel-cables/a6fd39404c4c2eaab49ebcda2564a6eb3b48f162/docs/report.Rmd
+
+## pandoc_args:
+
+https://github.com/tjmahr/dissertation/blob/master/_output.yml
+
+https://bookdown.org/yihui/bookdown/theming.html
+
+Can't find much on this in:
+
+https://bookdown.org/yihui/bookdown/
+
+## Word Template
+
+https://datascienceplus.com/r-markdown-how-to-insert-page-breaks-in-a-ms-word-document/
+
+http://rmarkdown.rstudio.com/articles_docx.html
+
+To modify this style, we select the ‘Home‘ ribbon tab and click the Styles window launcher in the Styles group (lower right corner, highlighted with red circle).
+
+RMarkdown documents contain a metadata section called YAML header. In this header, we specify the output format (word_document) and the name of the MS Word template (mystyles.docx).
+
+"formatting options in Markdown are very limited"
+
+http://rmarkdown.rstudio.com/word_document_format.html#style_reference
+
+Example...
+
+## Word Issues Rendering
+
+http://yetanothermathprogrammingconsultant.blogspot.com/2017/03/r-plotly-and-r-markdown.html
+
+I was unable to render a word doc from my book with plotly charts:
+
+I got an error that said to add always_allow_html: yes to the YAML front-matter of your rmarkdown file. That didn't work and then I found:
+
+https://github.com/rstudio/bookdown/issues/440
+
+I then installed the webshot package in R and WALA - IT WORKED.
+
+## Word Preview Chapter
+
+I would, instead, send my supervisors a Word document generated for a chapter and work on it in Word before integrating the changes back into my bookdown book. To generate a Word document for a chapter you can use the bookdown::preview_chapter()...
+
+https://eddjberry.netlify.com/post/writing-your-thesis-with-bookdown/
+
+## Tables
+
+https://crsh.github.io/papaja_man/writing.html#tables
+
+https://datascienceplus.com/r-markdown-how-to-format-tables-and-figures-in-docx-files/
+
+https://github.com/nutterb/pixiedust
+
+## Interesting
+
+https://github.com/kbrevoort/rocx
+
+https://kenbrevoort.wordpress.com/2016/11/01/introduction-to-the-rocx-package-for-r/
+
+https://crsh.github.io/papaja_man/limitations.html#ms-word-caveat
+
+https://bookdown.org/baydap/bookdownplus/
+
+## Feedback
+
+"Until recently, I found that the convertion from LaTex and Rmarkdown to Word is reasonably good, thanks to bookdown by Yihui. I just finished my first manuscript written in Rmarkdown 100%. Both my advisor and I are quite happy with it. "
+
+https://daijiang.name/en/2017/04/05/writing-academic-papers-with-rmarkdown/
+
+## Issues
+
+https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html
+
+This feature is not available to e-books or Word output.
+
+Equation references work best for LaTeX/PDF output, and they are not well supported in Word output or e-books.
+
+## RTF
+
+https://beta.rstudioconnect.com/content/2976/#72
+
+https://github.com/DanniYuGithub/RTF2/
+
+
+
+
+
+

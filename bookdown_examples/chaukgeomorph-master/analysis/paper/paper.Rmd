@@ -1,0 +1,184 @@
+---
+title: 'The title'
+author:
+- Ben Marwick
+- Maria Schaarschmidt
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+   bookdown::word_document2:
+    fig_caption: yes
+    # reference_docx: templates/template.docx
+bibliography: references.bib
+# csl: journal-of-archaeological-science.csl
+abstract: |
+  This is the abstract.
+---
+```{r setup, include=FALSE, echo = FALSE}
+library(knitr)
+opts_chunk$set(echo = FALSE)
+opts_chunk$set(echo = FALSE, 
+               messages = FALSE, 
+               warnings = FALSE, 
+               dpi = 300,
+               cache = TRUE)
+library(tidyverse)
+```
+
+# Introduction
+
+The Irrawaddy River terraces of central Myanmar have been part of global Pleistocene archaeology since de Terra and Movius [-@deTerra1943] published their monograph reporting archaeological evidence from the Middle Pleistocene. Their expedition also resulted in Movius' [-@movius1948lower] influential paper claiming to identify a major cultural and technological division between the east and west hemispheres. Movius described a region to the west of the Irrawaddy where hand-axes are present in Middle Pleistocene contexts, and a region to the east where hand-axes are absent, with chopper-chopping tools found instead. This division has subsequently been known as the Movius Line, and has been the subject of extensive discussion by archaeologists [@lycett2010demographic; @petraglia2008large; @lycett2010movius; keates2002movius; @norton2006movius; @yamei2000mid; @norton2008movius; @brantingham1999astride; @brumm2012biface; @brumm2010movius; @norton2006middle; @davis1999recent; @norton2000current; @lycett2007soanian; Romanowska2016]. This includes critical discussion that has questioned the reliability of Movius' field observations [@dennell2016life; @dennell2014hallam].
+
+The importance of the Movius' findings depend primarily on the chronology of the landscape he described, and the technology of the artefacts that he collected.  Despite the prominence of the Movius Line in discussions of global patterns of human evolution, there has not been any new data from the location of Line since Movius' initial field work. Movius' interpretation of the Irrawaddy terraces and the technology of the artefacts he described remains untested by new data from his study area. In this paper we assess the current status of the Irrawaddy terraces and stratigraphy, and the technology of the artefacts found near the Irrawaddy in central Myanmar. We report on our recent surveys and field observations of the key archaeological locations that Movius visited in January of 1938. 
+
+# Background 
+
+The study area is located between the Sagaing fault to the west and the Shan scarp to the east. The Sagaing fault is a major strike-slip right-lateral continental fault that extends over 1200 km, first described by Noetling [-@noetling1900miocene], and later described by others [e.g. @thein1991lateral; @maung1987transcurrent]. The Shan scarp is a topographic discontinuity that marks the boundary of the central plains and the Shan plateau to the east, a region with an average elevation of 1000 m and large variations of elevation over short distances (up to 1800 m over a few kilometers) [@bertrand2001diachronous; @bertrand2003tectonics].
+
+Descriptions of the physical and cultural geography of the Irrawaddy terraces of central Myanmar began appearing with increasing frequency in scholarly literature after Myanmar was attached to the British Empire in 1886. The Japanese occupation in 1942 disrupted geological research, and few publications appeared after the Second World War [@bender1983geology]. In the following sections we review this literature to characterise this landscape. Then we review previous work on the archaeology of this landscape. 
+
+## Geomorphology of the Irrawady terraces
+
+There are three characteristic details of the terrace landforms: the red gravels that drape the surface, the fossil wood pieces found in these gravels, and the terraces 
+
+One of the most distinctive features of the Irrawaddy terraces is the 'coarse red gravels', as they were described by Chhibber [-@chhibber1934geology]. Chhibber describes the Irrawaddy River as meandering through the Lower Irrawaddy region, its course occasionaly constrained by sandstone cliffs. These cliffs are especially visible near Yenangyaung, and often capped by sheets of coarse red gravels. Chibber interprets the presence of these gravels as indicatative of previous heights of the river. Stamp [-@stamp1940irrawaddy, p. 339] also observed the 'thin, coarse red (partly lateritized) gravels' that characterise this landscape. He traces their origin to the Arnkun Yoma, 150 km to the north west, based on the composition and morphology of the cobbles. Chhibber and Stamp both made a broad correlation between the red gravels of the Irrawaddy and the Siwaliks of India based on similarities in the large vertebrate fossil taxa, for example, _Mastodon_ sp., _Stegodon_ sp., and _Hippoputamus_ sp. This implies a Pliocene age for Irrawaddy deposits. 
+
+de Terra et al. [-@deTerra1943] calls these deposits 'Lateritic Gravel' and claim that the Lateritic Gravel of the Chauk area are related to the Uru Boulder Conglomerate of Northern Burma (400 km north of Chauk), and the uppermost Siwalik Boulders of Northwestern India. The correlation is based on the presence of greenstone, gneissic rocks and sandstone in the gravels. This correlation with India is the basis for their determination that the Irrawaddy terraces formed during the Plio-Pleistocene. Dennell [-@dennell2014hallam] has reviewed this claim in detail, and found no convincing evidence for a connection between India and these Irrawaddy gravels, noting that greenstone, gneissic rocks and sandstone are all present in the metamorphic belt of central Burma that extends from the Myityina district in upper Myanmar, to south of Mandalay. 
+
+The fossil wood fragments found in these gravels are typically within the size range of the background cobbles, but occasionally much larger trunk and branch sections are found. Chhibber notes that most of the fossil wood is identified _Diptcrocarpoxylon burmense_ which grew abundantly in the region at the time of his survey. Both monocotyledonous and dicotyledonous fossil wood are found in the deposits. A small percentage of the fossil wood is monocotyledoneae, with distinctive cordiform vascular bundles visible in the rock. The fossil wood is mostly siliceous, calcareous, ferruginous and carbonaceous. Most pieces are composed of chalcedony, microcrystalline silica, and opal.  Rarely found are calcite, siderite, and quartz with nodules of iron and calcium [-@chhibber1934geology]. Chhibber discussed a range of previous theories about remote origins of the fossil wood, but finds them unconvinving because of the distribution of fossil wood is limited to the Irrawaddy valley. He concludes that the most likely origin is weathering combined with fresh-water desert conditions to produce colloidal silica that dissolved in the waters that laid down the gravel deposit in the Irrawaddy valley region. Chhibber's primary evidence for this local origin is the identification of Lieseqamq rings in the fossil wood, a characteristic of chemical precipitation reactions.  
+
+Perhaps the most controversial geomorhological detail of the Irrawaddy is the identification and chronology of the terraces. ...de Terra... ...Chhibber...
+
+Stamp recognised 'peneplaned surfaces at various levels' in the region, but is skeptical of de Terra's interpretations. Stamp writes that 'de Terra makes so many sweeping generalizations, some of which are obviously incorrect, and glosses over the most disputed difficulties of stratigraphical correlation, that one is forced to suggest that much more work is needed before his various conclusions can be accepted.'
+
+
+
+## Archaeology of the Irrawady terraces
+
+### First archaeological exploration and the Movius Line
+
+Since the 19th century, archaeological interest was focussed on the central part of the Irrawaddy River in central Myanmar. The first artefacts were discovered by Morris in 1930 in Upper Myanmar later assigned to the Anyathian culture from the Lower Palaeolithic in Southeast Asia [@movius1948lower]. Anyathian artefacts are mainly found in the secondary deposits of the Pleistocene terrace gravels of the Irrawaddy River, generally containing only few handaxes [@movius1948lower]. The occupation of the Irrawaddy River terraces during the Pleistocene seems to be limited to the east bank of the River and the central part of Myanmar because the finds concentrate in the region around Chauk, Nyaung-U and Yenanyaung [@movius1944early; @deTerra1943].
+
+Probably due to raw material constraints (fossil wood and silicified tuff), the three phases of the Early Anyathian are dominated by a high degree of uniformity of the stone tools [@movius1948lower]. Fossil wood is difficult to flake because it easily flakes parallel to the natural fibres of the wood. Most of the artefacts made from fossil wood are worked on only one plane; multiple flake scars are rare. Silicified tuff is more suitable for stone tool production due to its fine-grained homogenous texture and conchodial fractures, although it can be very porous. In total, 483 implements were found (261 from fossil wood, 220 from silicified tuff and 2 from quartzite). Implements made from fossil wood include mostly handaxes, whereas stone tools made of silicified tuff are dominantly choppers [@deTerra1943; @movius1948lower].
+
+In addition, 23 Early Anyathian artefacts were found in situ in the lateritic gravel and gravel deposits of terrace 1 near Chauk on the Hill of Chinaungma. Movius [-@deTerra1943] assigned these implements to the first phase of the Early Anyathian and the beginning of the Middle Pleistocene as the oldest human artefacts found in the Irrawaddy Valley. Implements of phase 2 of the Early Anyathian show either a ferruginous crust, developping during an interpluvial period, or are heavily rolled, suggesting these implements have been derived from older deposits. Most of the Artefacts from the third phase of the Early Anyathian are very heavily rolled and are associated with the early Upper Pleistocene when the gravels were deposited [@deTerra1943].
+
+Comparing the more complex technologies found in Africa, Europe, the Levant and SW Asia to the simpler chopper/chopping tool technology of Southeast/East Asia, Movius proposed the concept of the Movius Line that separates the Lower Palaeolithic into two cultures - the simple or non- stone tool-making cultures in E and SE Asia (e.g. Imjin/Hantan River Basin, Korea and Luonan Basin and Longyadong Cave, China) and northern China (e.g. Zhoukoudian) and the more complex technologies in Africa, Europe and SW Asia (e.g. Olduvai George Beds, Tanzania and Olorgesailie, Kenya) [@brumm2012biface; @norton2006middle; @gao2014late; @dennell2014hallam]. In addition, the term "Anyathian" is no longer used, instead the time span in question is referred to as the Middle Pleistocene.
+
+### The Movius Line in modern quaternary science
+
+In modern quaternary science, the Movius Line and its implications on human evolution in Southeast Asia are highly debated [e.g. @brumm2012biface; @dennell2016life; @norton2008movius; @norton2006middle; @petraglia2008large; @schick1994movius]. Hutterer [-@hutterer1977reinterpreting] states only questionable geological associations between artefacts and the River terraces have been made and assumptions regarding the chronology of artefacts were mostly based on the degree of rolling [@dennell2014hallam]. Norton et al. [-@norton2006middle] reworked the concept of the Movius Line by incorporating existing issues with the “traditional” Movius Line. The three main characteristics of the “Movius Line sensu lato” are the lower frequency of handaxe bearing sites in East Asia compared to Africa and India; the much lower percentage of bifacially made tools in East Asian assemblages and the morphological similarities to Acheulean artefacts [@norton2006middle; @norton2008movius].
+
+Acheulean bifacial tools are the earliest known artefacts from Africa dating to 1.76 Ma respectively to 1.7- 1.6 Ma [@brumm2012biface; @lycett2010movius; @norton2006middle]. These stone tools show a degree of standardization [@norton2006middle], including handaxes, cleavers, picks, knives, lanceolates and unifaces [@brumm2012biface] and are associated with hominins during the Pleistocene [@petraglia2008large]. Used until 100 ka ago, Acheulean tools are commonly interpreted as butchery tools, although other functions are possible as well [@brumm2012biface]. The definition of the Acheulean is not always straightforward and bifaces have been produced in different parts of the world over several 100 ka [@dennell2016life].
+
+Instead of assigning stone tools to certain technologies linked to different groups of early humans, and making implications about their abilities to produce stone tools, acknowledging the spatial and temporal diversity of lithic records in Eurasia is necessary [@dennell2016life]. Reasons for the lack of Acheulean technology east of the Movius Line are recently more investigated, including constraints on raw material, demographic and social transmission, environmental changes and dispersal routes [@brumm2012biface; @dennell2016life; @norton2008movius; @norton2006middle; @petraglia2008large; @schick1994movius].
+
+The use of stone tools may have been influenced by certain situations, tasks or individuals. Consequently, different individuals or groups could have used bifaces rarely, never or only at specific events or times [@dennell2016life]. There may have been no need for intensive stone tool production, or a different material was used, e.g. bamboo. This theory is known as the “bamboo hypothesis” [@field2005assessment; @lycett2010movius; @schick1994movius] and states that early modern humans used bamboo instead of stones to make tools [@schick1994movius] leaving behind no archaeological record [@lycett2010movius].
+
+Movius [-@movius1944early] stated that the raw material used east of the Movius Line was often of low quality quartz and quartzite that would prevent the production of the same kind of bifaces [@dennell2016life; @lycett2010movius]. However, handaxes from Zhoukoudian Locality 1, Chongokni and Kumpari (China) are bifacially worked and are made of quartz and quartzite river cobbles from this area [@lycett2010movius].
+
+Whilst colonizing East Asia, early modern humans encountered barriers such as mountain ranges, river deltas, oceans and deserts that provide a range of resources (e.g. water, food, shelter) [@lycett2010movius]. However, the environment during the Middle Pleistocene was challenging in terms of changing climatic conditions and accompanying biogeographic transitions [@bar2001africa; @field2005assessment; @lycett2010movius; @schick1994movius]. 
+Based on GIS analyses, Field & Lahr [-@field2005assessment] and Field et al. [-@field2007southern] identified possible routes from Africa leading eastwards along the coasts to Asia and eventually via the Sunda Shelf to Australia. This “Southern Dispersal Route” is dated to around 75-60ka [@field2005assessment; @field2007southern; @clarkson2012continuity; @macaulay2005single; @marwick2009biogeography] matching with some Middle Pleistocene archaeological sites in Africa, India (e.g. Borra, the Kokan Complex and the Hiran Valley) and SE Asia adjacent to coastal regions dated to 56-69ka. A dispersal along the coasts and rivers seems reasonable because they provide sufficient resources. However, these first temporary settlements would not necessarily leave behind an archaeological record due to the rising sea level and the subsequent flooding of the Sunda shelf because of environmental changes [@marwick2009biogeography].
+
+Recently, the model of demographic and social transmission has been proposed as a possible explanation for the diverse development of technologies in E/SE Asia and W/SW Asia. The concept is based on the assumption that a certain effective population size is essential for developing traditions and technologies to be passed on to further generations [@lycett2010movius; @lycett2010demographic; @lycett2007there]. Given the colonization of the whole of East Asia and the distance to Africa decreasing the population size, the population density may have been too low to maintain or establish more complex tool making techniques [@lycett2010demographic; @lycett2007there; @dennell2014hallam].
+
+Dennell is one of the more recent critics of the concept of the Movius Line describing Movius' views as “backwards”, “ancient” and “eurocentric” [@dennell2016life]. The drawing of a line to mark differences in stone tool production between SE and SW/W Asia neglects the variety and complexity of lithic assemblages on either side of the line, leaving East Asia in a minor position in human evolution [@dennell2014hallam; @dennell2016life]. According to Dennell, none of the material found by Movius and his colleagues has a stratigraphic context and they failed to identify a sequence of four terraces along the Irrawaddy River from the Middle to Upper Pleistocene. Furthermore, because of the finding context, connections to other Middle Pleistocene Acheulean assemblages in Southwest Asia are difficult to demonstrate [@dennell2016life; @dennell2014hallam].
+
+
+
+### Landscape observations
+
+The landscape in the Lower Irrawaddy region is characterized by a series of landforms on different levels on the eastern side of the river. There are sand cliffs that are heavily incised. On the west bank of the river, an old maeander of the Irrawaddy, but no terrace-like forms can be seen apart from the remnants of a plateau or peneplaned surface further inland. Another landscape feature is the geological fault zone east of Chauk, marking the base of the Shan scarp.
+
+```{r LandscapeChauk, fig.cap="Landscape around the middle part of the Irrawaddy River near Chauk. View from the Chinthaungma monastery towards the west side of the river."}
+knitr::include_graphics("../figures/Landscape_Chauk.JPG")
+```
+
+The uppermost landform (L1) is only sparsely preserved with one relict hill where the Chinthaungma monastery sits 70 m above the river level. Thick red gravel layers with a reddish-brown silty sand matrix overly the bedrock. 
+
+Landform 2 (L2) can be distinguished by the scarcity of vegetation compared to the lower landform 3 (L3). Probably due to the very thin or absent soil layer on top of the bedrock, only grass, shrubs and some scattered trees grow on L2 (Figure \@ref(fig:LandscapeChauk)). The terrain is severely incised and has a lot of gently rolling gullies and valleys.
+
+On L3, the vegetation is more prominent and there are fewer incisions. The red gravel layer is not as dominant as on L1, whereas the soil layer seems to be more pronounced. There are some filled fields and a golf course that was created in 1947 for the local oil workers. Because of its lower location, the gravels may be colluvial redposits from L1, although it could be an alluvial terrace.
+
+According to Movius, two more levels can be spotted from the river. After an intensive inspection, the fourth landform (L4) may be a cliff close to the river (base at 46 m) with a slight elevation compared to the river (41 m). In contrast to the other levels, the red gravel layer is absent on L4. However, the bedrock is overlain by coarse gravels in a reddish brown sandy silt matrix (5 cm) that is followed by reddish brown fine grained sandy silt with occasional small gravel clasts, as well as small carbonate modules.
+
+However, these landforms cannot be described as terraces for certain. There are indications that it might be terraces as elucidated by Movius, e.g. the gravels found on L1 and L3. But explicit terraces could not be identified in the field, especially due to the absence of terraces on the west side of the Irrawaddy River. More intensive cultivation and a very disturbed landscape could be reasons for that.
+
+In general, the cuttings consist of 4 layers and a thin soil profile of about 5 cm. The uppermost layer is made from brownish red poorly sorted gravel that contains medium to well-rounded cobbles and pebbles. The slightly silty sandy matrix contains an increasing amount of gravel towards the top. The cobbles are weathered and the larger ones are made from fossil wood. There is no bedding, sorting or imbrication visible. Fine roots penetrate the profile throughout. The lower contact with the following layer is moderately sharp. The gravel layer is followed by a brownish red silty sand that is well rounded with no obvious bedding. There occasional lighter patches that could indicate decayed pebbles. The contact with the next layer is fairly sharp. Between the bedrock and the red sand layer there is angular weathered bedrock intertwined with a dark band, possibly either a weathered palaeosurface or a weathered intrusion of host rock. The bedrock itself is medium to fine-grained light grey and brown red sand including some silt. The red band could be filling from above. A few isolated roots are visible.
+
+
+## Survey data
+
+```{r}
+# analysis of survey and GPS data in here
+```
+
+## Surface finds of stone artefacts
+
+
+## Formation of the terraces and archaeological contexts
+
+- summary of formation 
+- implications for age of the archaeological deposit
+
+## Conclusion
+
+
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+In Table \@ref(tab:carstab) we can see some data about the relationship between pressure and tempurature.
+
+```{r carstab}
+library(knitr)
+kable(head(mtcars), caption = "Data about cars")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressureplot, echo=FALSE, fig.cap="Plot of car data"}
+plot(pressure)
+```
+
+In Figure \@ref(fig:pressureplot) we can see some data about pressure.
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Citations and References 
+
+And we can have a citation, using a `.bib` file that holds all the details. To get this: [@Marwick2016repro] we type `[@Marwick2016repro]`. The text after the `@` is the bibtex key that links the in-text citation to the full details in the `.bib` file.
+
+All of the usual variations on in-text citation formatting are possible in markdown, and listed for reference here: <http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html>
+
+## Colophon
+
+This report was generated on `r Sys.time()` using the following computational environment and dependencies:
+
+```{r}
+# which R packages and versions?
+kable(data.frame(Setting = names(devtools::session_info()$platform),
+                 Value = sapply(devtools::session_info()$platform, `[`, 1),
+                 stringsAsFactors = FALSE,
+                 row.names = NULL),
+      caption = "R session information")
+```
+
+
+
+```{r}
+kable(devtools::session_info()$packages,
+      caption = "Packages that this report depends on")
+
+# what commit is this file at?
+library(git2r)
+repo <- repository(path = "../..")
+last_commit <- commits(repo)[[1]]
+```
+
+
+## References 
+

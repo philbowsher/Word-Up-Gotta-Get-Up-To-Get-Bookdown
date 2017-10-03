@@ -1,0 +1,372 @@
+---
+title: "Bookdown_Resources"
+author: "Phil Bowsher"
+date: "10/3/2017"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## Word info:
+
+https://earthdatascience.org/courses/earth-analytics/document-your-science/add-citations-to-rmarkdown-report/
+
+https://bookdown.org/yihui/bookdown/output-formats.html
+
+Arguments
+
+word_document2
+
+options
+
+reference_docx
+
+https://github.com/kbrevoort/rocx
+
+https://kenbrevoort.wordpress.com/
+
+fig_caption
+
+Actually, bookdown _can_ handle captions and cross-references for MS Word output. If your header YAML contains `output: bookdown::word_document2` then you can use captions and cross-references exactly as described in 
+
+https://bookdown.org/yihui/bookdown/cross-references.html
+
+https://github.com/rstudio/bookdown/issues/190
+
+keep_md
+
+pandoc_args
+
+md_extensions
+
+toc:
+
+## literate programming
+
+https://daijiang.name/en/2017/04/05/writing-academic-papers-with-rmarkdown/
+
+https://remi-daigle.github.io/2017-CHONe-Data/Rmarkdown.nb.html
+
+Literature programming: LaTex allows us to mix code with text in the same file, which increases the reproducibility and decreases potential errors.
+
+https://github.com/tjmahr/dissertation
+
+## word_document2:
+
+https://github.com/rstudio/bookdown/releases
+
+https://cran.r-project.org/web/packages/bookdown/bookdown.pdf
+
+https://github.com/rstudio/bookdown/issues/127
+
+https://twitter.com/xieyihui/status/736928051427053568
+
+https://bookdown.org/yihui/bookdown/a-single-document.html
+
+http://rmarkdown.rstudio.com/word_document_format.html#style_reference
+
+https://eddjberry.netlify.com/post/writing-your-thesis-with-bookdown/
+
+https://github.com/kbrevoort/rocx
+
+https://kenbrevoort.wordpress.com/2016/11/01/introduction-to-the-rocx-package-for-r/
+
+https://github.com/ecoquants/nrel-cables/blob/a6fd39404c4c2eaab49ebcda2564a6eb3b48f162/docs/report.Rmd
+
+https://github.com/tjmahr/dissertation
+
+https://asancpt.github.io/edison-report/
+
+https://asancpt.github.io/edison-report/education.html#r-the-fundamental-tool-for-data-science
+
+https://crsh.github.io/papaja_man/limitations.html#ms-word-caveat
+
+https://crsh.github.io/papaja_man/writing.html
+
+https://datascienceplus.com/r-markdown-how-to-number-and-reference-tables/
+
+http://www.pzhao.org/en/post/bookdown-cheatsheet/
+
+https://earthdatascience.org/courses/earth-analytics/document-your-science/add-citations-to-rmarkdown-report/
+
+https://twitter.com/benmarwick/status/872534548684300288
+
+https://github.com/rstudio/bookdown/issues/191
+
+https://github.com/rstudio/bookdown/issues/190
+
+https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html
+
+https://github.com/rstudio/bookdown/issues/273
+
+https://stackoverflow.com/questions/38550730/rmarkdown-centre-and-reference-table-in-ms-word
+
+https://github.com/rstudio/bookdown/issues/328
+
+https://github.com/rstudio/bookdown/issues/327
+
+## Intro:
+
+https://github.com/rstudio/bookdown/blob/e793de7d76c1a041b084820fc564ab21d9d78968/R/word.R
+
+http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html
+
+https://bookdown.org/yihui/bookdown/get-started.html
+
+http://rstudio-pubs-static.s3.amazonaws.com/247669_78b2712b0d2446f4bb420cc30cae86f0.html
+
+http://r4ds.had.co.nz/r-markdown.html
+
+https://kieranhealy.org/resources/
+
+http://emilio.lcano.com/erum/01_intro.nb.html
+
+## reproducible:
+
+http://kbroman.org/steps2rr/
+
+## Examples:
+
+https://angus.readthedocs.io/en/2017/rmarkdown_rnaseq.html
+
+## reference:
+
+https://bookdown.org/yihui/bookdown/markdown-syntax.html
+
+https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
+
+https://bookdown.org/yihui/bookdown/bookdown.pdf
+
+http://www.decisionsciencenews.com/2017/08/25/much-will-texas-rain/
+
+https://cran.r-project.org/web/packages/bookdown/bookdown.pdf
+
+http://www.pzhao.org/en/post/bookdown-cheatsheet/
+
+## RTF:
+
+https://slides.yihui.name/2017-rstudio-conf-rmarkdown-Yihui-Xie.html#22
+
+## More Word:
+
+http://yetanothermathprogrammingconsultant.blogspot.com/2017/03/r-plotly-and-r-markdown.html
+
+http://lineardata.net/how-do-you-write-beautiful-reports-using-r-markdown/
+
+http://rmarkdown.rstudio.com/word_document_format.html#style_reference
+
+http://rmarkdown.rstudio.com/articles_docx.html
+
+https://github.com/rstudio/bookdown/issues/127
+
+https://twitter.com/xieyihui/status/736928051427053568
+
+https://datascienceplus.com/r-markdown-how-to-insert-page-breaks-in-a-ms-word-document/
+
+https://stackoverflow.com/questions/38550730/rmarkdown-centre-and-reference-table-in-ms-word
+
+https://stackoverflow.com/questions/41982700/how-to-properly-number-headings-in-word-from-a-rmarkdown-document
+
+https://stackoverflow.com/questions/43239868/add-blank-line-to-word-output-rmarkdown
+
+https://stackoverflow.com/questions/45032180/changing-the-font-size-of-figure-captions-in-rmarkdown-word-output
+
+https://stackoverflow.com/questions/45726272/r-markdown-word-ducument-output-margins
+
+https://stackoverflow.com/questions/40657340/grouping-names-for-table-column-headings-in-rmarkdown-for-word-docx-output
+
+https://stackoverflow.com/questions/37671868/knitr-rmarkdown-docx-tables
+
+https://stackoverflow.com/questions/17858598/add-styling-rules-in-pandoc-tables-for-odt-docx-output-table-borders/34148111#34148111
+
+https://datascienceplus.com/r-markdown-how-to-format-tables-and-figures-in-docx-files/
+
+## Tables:
+
+https://github.com/nutterb/pixiedust#a-cool-free-tip
+
+https://stackoverflow.com/questions/41156265/html-formatted-tables-in-rmarkdown-word-document
+
+https://cran.r-project.org/web/packages/xtable/xtable.pdf
+
+https://cran.r-project.org/web/packages/tables/vignettes/tables.pdf
+
+https://cran.r-project.org/web/packages/stargazer/index.html
+
+https://twitter.com/polesasunder/status/464132152347475968/photo/1
+
+https://stackoverflow.com/questions/42250743/how-to-number-table-with-chapter-number
+
+## Key Info:
+
+https://bookdown.org/yihui/bookdown/
+
+https://bookdown.org/
+
+https://github.com/rstudio/bookdown
+
+https://cran.rstudio.com/web/packages/bookdown/index.html
+
+https://bookdown.org/yihui/bookdown/r-markdown.html
+
+https://slides.yihui.name/2017-rstudio-conf-rmarkdown-Yihui-Xie.html#32
+
+http://r4ds.had.co.nz/r-markdown-formats.html
+
+## Webinars:
+
+https://www.rstudio.com/resources/webinars/introducing-bookdown/
+
+## Updates:
+
+https://blog.rstudio.com/2016/12/02/announcing-bookdown/
+
+https://github.com/rstudio/bookdown/releases
+
+## Issues:
+
+https://github.com/rstudio/bookdown/issues
+https://stackoverflow.com/questions/tagged/bookdown
+
+## Info:
+
+https://stackoverflow.com/questions/40563479/relationship-between-r-markdown-knitr-pandoc-and-bookdown
+
+https://jabranham.com/blog/2016/11/using-pandoc-export-to-word/
+
+## Shiny:
+
+https://github.com/rstudio/shiny/issues/1645
+
+https://bookdown.org/yihui/bookdown/web-pages-and-shiny-apps.html
+
+http://rmarkdown.rstudio.com/authoring_shiny.html
+
+## Interesting:
+
+https://sites.temple.edu/psmgis/2017/07/30/using-r-markdown-to-create-reports/
+
+https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T5-RMarkdown/Intro_RMarkdown/
+
+http://kbroman.org/datacarpentry_R_2017-01-10/04-rmarkdown.html
+
+https://cs.brown.edu/courses/cs100/studios/studio-3/
+
+https://remi-daigle.github.io/2017-CHONe-Data/Rmarkdown.nb.html
+
+https://ismayc.github.io/rbasics-book/rbasics.pdf
+
+https://cran.r-project.org/web/packages/docxtools/docxtools.pdf
+
+http://www.hafro.is/~einarhj/crfmr/dynamic_reports.html
+
+http://antonetteshibani.com/code/creating-reports-in-r-code/
+
+http://www.petersmith.org/blog/2016/11/11/academic-workflow/
+
+http://kbroman.org/steps2rr/
+
+https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.html
+
+https://rstudio-pubs-static.s3.amazonaws.com/248023_788560df42174f40a36b49124cb1d142.html
+
+https://www.r-bloggers.com/reproducible-reports-with-rstudio/
+
+https://github.com/nutterb/pixiedust/blob/master/README.md
+
+https://www.researchgate.net/publication/313221458_All_in_one_-_Reporting_with_RStudio_slides
+
+https://twitter.com/gauravsk_/status/903266006713344004
+
+http://www.john-ros.com/Rcourse/
+
+https://github.com/benmarwick/mjbtramp
+
+https://socserv.mcmaster.ca/racinej/762/files/energy.Rmd
+
+https://earthdatascience.org/courses/earth-analytics/document-your-science/add-citations-to-rmarkdown-report/
+
+https://bookdown.org/baydap/bookdownplus/
+
+https://github.com/crsh/papaja/blob/master/R/apa6_formats.R
+
+## Notebooks:
+
+http://opr.princeton.edu/workshops/Downloads/2017Jan_ReproducibleReasearchToolsRPratt.pdf
+
+## Pandoc:
+
+http://pandoc.org/MANUAL.html#tables
+
+https://github.com/jgm/pandoc
+
+https://github.com/jgm/pandoc/pull/1968
+
+https://github.com/jgm/pandoc/pull/2037
+
+https://github.com/kjhealy/pandoc-templates
+
+http://pandoc.org/MANUAL.html
+
+## CSS:
+
+http://rmarkdown.rstudio.com/html_document_format.html#appearance_and_style
+
+## knitr:
+
+http://kbroman.org/knitr_knutshell/
+
+https://yihui.name/knitr/
+
+## Latex
+
+https://stat.ethz.ch/pipermail/r-help/2016-November/442873.html
+
+https://tex.stackexchange.com/questions/390648/centering-only-certain-equations-in-rmarkdown-using-latex
+
+## YAML
+
+https://github.com/rstudio/tufte/issues/47
+
+## Linux
+
+https://groups.google.com/forum/#!topic/knitr/I2OPZfxGS18
+
+## Github
+
+https://github.com/ogansell/DocRR/blob/f858f8f4e06115c78ff3c1f83578b2aee0f08363/inst/rmarkdown/templates/dochtml_webpage/skeleton/skeleton.Rmd
+
+## Output types
+
+https://github.com/tiernanmartin/shared-docs/blob/aa2d66b7dd1065efdce5ffcfe717c932f18ac076/2017/bookdown-test/rmds/03-formats.Rmd
+
+Live examples:
+
+http://www.john-ros.com/Rcourse/
+
+https://github.com/DLMtool/DLMtool_UserGuide
+
+https://github.com/goranbrostrom/HLCS_17/blob/7244cb983955d00abc6274130d79da610024e741/ddb.Rmd
+
+https://github.com/ismayc/chemistr-book/blob/747fdb3f02ee56cb7f7751c1651a0cfb97ea38e9/_output.yml
+
+https://ismayc.github.io/chemistr-book/
+
+https://github.com/drnorfaizal/RStudio/blob/4f8c21d46142b6f7b2687089bfbcf2ef2307f808/my_Report/report/Surgery_Masters_NS/MS_Neurosurg_PSAR/_output.yml
+
+http://cities.github.io/datascience/
+
+https://github.com/cities/datascience
+
+https://bookdown.org/rdpeng/RProgDA/continuous-integration.html
+
+## Parameterised:
+
+https://github.com/rstudio/bookdown/issues/346
+
+https://github.com/rstudio/bookdown/issues/155
+
+## Single documents
+
+https://stackoverflow.com/questions/40529798/bookdown-special-headers-within-article-document-class/40536656
