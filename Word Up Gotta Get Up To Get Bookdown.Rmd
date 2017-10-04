@@ -351,6 +351,10 @@ https://github.com/rstudio/bookdown/issues/440
 
 I then installed the webshot package in R and WALA - IT WORKED.
 
+Follow the steps here:
+
+https://bookdown.org/yihui/bookdown/html-widgets.html
+
 ## Word Preview Chapter
 
 I would, instead, send my supervisors a Word document generated for a chapter and work on it in Word before integrating the changes back into my bookdown book. To generate a Word document for a chapter you can use the bookdown::preview_chapter()...
@@ -394,8 +398,6 @@ Equation references work best for LaTeX/PDF output, and they are not well suppor
 https://beta.rstudioconnect.com/content/2976/#72
 
 https://github.com/DanniYuGithub/RTF2/
-
-
 
 
 
