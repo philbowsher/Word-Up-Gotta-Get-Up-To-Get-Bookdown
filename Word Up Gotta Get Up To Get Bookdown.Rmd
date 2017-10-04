@@ -272,6 +272,12 @@ https://github.com/rstudio/bookdown/issues/190
 
 https://github.com/aj2duncan/Rmd_Ed_Paper
 
+Note the word_document2() function is in the YAML header of the R Markdown file and not in a _output.yml file...
+
+Though you could as explained here:
+
+http://rmarkdown.rstudio.com/html_document_format.html
+
 ## Book as Word
 
 http://www.pzhao.org/en/post/bookdown-cheatsheet/
